@@ -11,7 +11,7 @@ library.add(fas, far, fab);
 
 const HeroContainer = () => {
   return (
-    <div className="flex w-[80%] mt-48 mx-auto">
+    <div className="flex w-[80%] mb-[15rem] h-[300px] mt-[9rem] mx-auto">
       <div className="w-[40%] ">
         <div className="translate-x-[105px] translate-y-[100px]">
           <div className="w-35 h-35 bg-[#A15351]    rounded-xl"></div>
@@ -90,6 +90,7 @@ const HeroContainer = () => {
           />
         </div>
       </div>
+     
     </div>
   );
 };
