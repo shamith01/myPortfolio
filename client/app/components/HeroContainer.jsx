@@ -11,20 +11,26 @@ library.add(fas, far, fab);
 
 const HeroContainer = () => {
   return (
-    <div className="flex w-[80%] mb-[15rem] h-[300px] mt-[9rem] mx-auto">
+    <div className="flex w-[80%] mb-60 h-75 mt-36 mx-auto">
+      {/* mt-36-9rem  15rem-60 75-300px */}
       <div className="w-[40%] ">
-        <div className="translate-x-[105px] translate-y-[100px]">
+        <div className="translate-x-26.5 translate-y-25">
+          {/* y-100px   x-105px */}
           <div className="w-35 h-35 bg-[#A15351]    rounded-xl"></div>
-          <div className="w-35 h-35 border-[#A15351] bg-black translate-x-[5px] translate-y-[-145px]  z-10  border-3  rounded-xl">
+          <div className="w-35 h-35 border-[#A15351] bg-black translate-x-1.25 -translate-y-36.25  z-10  border-3  rounded-xl">
+            {/*36.25-145px x-5px-1.25 */}
             <FontAwesomeIcon
               icon="fa-brands fa-node-js"
               className="w-[70%] mx-auto my-3 text-[#A15351]"
             />
           </div>
         </div>
-        <div className="translate-x-[230px] translate-y-[-310px]">
+        <div className="translate-x-57.5 -translate-y-77.5">
+          {" "}
+          {/* y-310px x-230px*/}
           <div className="w-35 h-35 bg-[#A15351]    rounded-xl"></div>
-          <div className="w-35 h-35 border-[#A15351] bg-black  translate-x-[5px] translate-y-[-145px]  z-10  border-3  rounded-xl">
+          <div className="w-35 h-35 border-[#A15351] bg-black  translate-x-1.25 -translate-y-36.25  z-10  border-3  rounded-xl">
+            {/*36.25-145px x-5px-1.25 */}
             <FontAwesomeIcon
               icon="fa-brands fa-square-js"
               className="w-[70%] mx-auto my-3 text-[#A15351]"
@@ -60,10 +66,10 @@ const HeroContainer = () => {
         </div> */}
       </div>
       <div className="w-[60%]">
-        <h1 className="font-poppins text-2xl font-bold ">
+        <h1 className="font-poppins text-3xl font-bold ">
           Hi,it's <span className="test-primary">Shamith</span>
         </h1>
-        <h2 className="text-lg font-semibold">
+        <h2 className="text-xl font-semibold">
           I'm a <span className="test-primary">FullStack Web Developer</span>
         </h2>
         <p className="w-[90%]  py-4 font-poppins">
@@ -71,26 +77,37 @@ const HeroContainer = () => {
           production-ready web applications with a strong focus on system
           design, scalability, and real-world business needs.
         </p>
-        <div className="flex gap-4 mt-4">
-          <FontAwesomeIcon
-            icon="fa-brands fa-github"
-            className="w-5 h-5 hover:cursor-pointer"
-          />
-          <FontAwesomeIcon
-            icon="fa-brands fa-linkedin"
-            className="w-5 h-5 hover:cursor-pointer"
-          />
-          <FontAwesomeIcon
-            icon="fa-brands fa-twitter"
-            className="w-5 h-5 hover:cursor-pointer"
-          />
-          <FontAwesomeIcon
-            icon="fa-brands fa-instagram"
-            className="w-5 h-5 hover:cursor-pointer"
-          />
+        <div className="flex  gap-2 mt-8">{/*mt-50 -translate-x-50 */}
+          <div className="flex gap-2 items-center">
+            <FontAwesomeIcon
+              icon="fa-brands fa-github"
+              className="w-5 h-5 hover:cursor-pointer"
+            />
+            <h2 className="text-[12px]"></h2>
+          </div>
+          <div className="flex gap-2 items-center">
+            <FontAwesomeIcon
+              icon="fa-brands fa-linkedin"
+              className="w-5 h-5 hover:cursor-pointer"
+            />
+            <h2 className="text-[12px]"></h2>
+          </div>
+          <div className="flex gap-2 items-center">
+            <FontAwesomeIcon
+              icon="fa-brands fa-twitter"
+              className="w-5 h-5 hover:cursor-pointer"
+            />
+            <h2 className="text-[12px]"></h2>
+          </div>
+          <div className="flex gap-2 items-center">
+            <FontAwesomeIcon
+              icon="fa-brands fa-instagram"
+              className="w-5 h-5 hover:cursor-pointer"
+            />
+            <h2 className="text-[12px]"></h2>
+          </div>
         </div>
       </div>
-     
     </div>
   );
 };
